@@ -1,19 +1,19 @@
 
 /* Q4 */
-/* 
-.alert.success {
-  color: yellow;
-}
 
-.alert .success {
+/* .alert.success {
   color: yellow;
-}
+} */
 
-.alert, .success {
+/* .alert .success {
   color: yellow;
-}
+} */
 
-.alert--.success {
+/* .alert, .success {
+  color: yellow;
+} */
+
+/* .alert--.success {
   color: yellow
 } */
 
@@ -40,10 +40,10 @@
 
 
 /* Q5 */
-/* .first.second { color: green}; */
+/* .first.second { color: green};  */
 /* div > p { color: green; } */
 /* div .second, #first { color: green; } */
-/* p:last-child { color: green; }  */
+/* p:last-child { color: green; } */
 
 
 
@@ -68,7 +68,7 @@
 
 
 
-/* Q3 */
+/* Q6 */
 /* p { color: grey; }
 #red { color: red; }
 .blue { color: blue; }
