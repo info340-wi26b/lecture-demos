@@ -14,11 +14,32 @@ p {
   font-size: 18px;
 }
 
+h1, h2, p {
+  color:blueviolet;
+}
+
+header p {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.about-section > img {
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+
 img {
   max-height: 150px;
   border-radius: 20px;
   background-color: white;
 }
+
+p.red.border {
+  background-color: red;
+}
+
 
 /* elements with class="about-section" */
 .about-section {
@@ -26,6 +47,6 @@ img {
   padding: .25em .5em;
 }
 
-/* img:hover, img:focus {
+img:hover, img:focus {
   box-shadow: 0 0 5px 5px rgba(0,0,0,.2);
-} */
+}
