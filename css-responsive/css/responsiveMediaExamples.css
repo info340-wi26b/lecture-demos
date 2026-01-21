@@ -31,7 +31,7 @@ li {
 /* On a larger screen, use a green background and on swap the buttons to white */
 /* In here will apply at >768 */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   
   body {
       background-color:lightblue;
@@ -47,9 +47,9 @@ li {
   h1 {
     background-color: green;
   }
-}
+} */
 
-@media (min-width:1200px) {
+/* @media (min-width:1200px) {
   body {
       padding: 0 3em;
       background-color: darkblue;
@@ -62,7 +62,7 @@ li {
   h1 {
     color: white;
   }
-}
+} */
 
 
 /*small screens*/
