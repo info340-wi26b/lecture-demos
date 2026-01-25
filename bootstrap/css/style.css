@@ -9,3 +9,11 @@ img {
 .bg-purple {
     background-color: purple;
 }
+
+/* how to make our li elements into inline or inline-block*/
+nav li {
+
+    font-weight: 200px;
+    display: inline-block;
+    border: 2px solid black;
+}
