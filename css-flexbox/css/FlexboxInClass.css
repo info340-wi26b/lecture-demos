@@ -90,13 +90,13 @@ nav li {
 
 /* Example 2 properties the cards in the flexbox use */
 
-/* .jobs .card {
+.jobs .card {
     flex-grow: 1;
     flex-basis: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-} */
+}
 
 /* End of Example 2 */
 

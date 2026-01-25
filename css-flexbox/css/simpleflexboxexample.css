@@ -1,19 +1,19 @@
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
-    /* .row { 
+    .row { 
         display: flex;
         flex-wrap: wrap; 
-    } */
+    }
 
     .column  { 
         background-color: orange;
         border: 5px solid rebeccapurple;
-        padding: 5px;
+        padding: 3px;
 
-        /* flex-basis: 50%;  */
-        /* flex-grow: 1; */
+        /* flex-basis: 300px;  */
+        flex-grow: 1;
     }
 
 
