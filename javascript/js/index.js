@@ -14,7 +14,7 @@
 //  console.log(myDogName);
 //  console.log(typeof(myDogName));
 
-//  //create a variable (not assigned)
+// //  //create a variable (not assigned)
 // let hoursSlept; 
 // console.log(hoursSlept); //=> undefined
 
@@ -49,7 +49,7 @@
 // //Booleans
 // const likesCode = true;
 
-// //Arrays
+//Arrays
 // const letters = ['a', 'b', 'c']; //literal syntax
 // const things = ['raindrops', 2.5, true, [3,4,3]]; //mix types
 // console.log(letters[0]); //'a'
@@ -58,7 +58,7 @@
 // console.log(letters); //['a', 'b', 'c', , , 'f']
 // letters.push('z'); //arrays have methods as well
 // console.log(letters);
-// letters[3] = "car";
+// // letters[3] = "car";
 // console.log(letters);
 
 // const myArray = ["tim", "tom", "ted"];
@@ -90,8 +90,8 @@
 // console.log(dinnerOptions[1][2]); //"steak"
 
 
-// // Slide 21 (type coersion)
-// '40' + 2
+// Slide 21 (type coersion)
+'40' + 2
 // '40' - 4
 
 // console.log('40' + 4);
@@ -151,25 +151,25 @@
 
 // // // Slide 23 Accessing Properties
 
-// const ages = {alice:40, bob:35, charles:13};
+const ages = {alice:40, bob:35, charles:13};
 
-// console.log(ages);
+console.log(ages);
 
-// //access ("look up") values
-// console.log( ages['alice'] ); //=> 40
-// console.log( ages['bob'] ); //=> 35
-// console.log( ages['charles'] ); //=> 13
+//access ("look up") values
+console.log( ages['alice'] ); //=> 40
+console.log( ages['bob'] ); //=> 35
+console.log( ages['charles'] ); //=> 13
 
 // //keys not in the object have undefined values
-// console.log( ages['fred']); //=> undefined
+console.log( ages['fred']); //=> undefined
 
 // //assign values
-// ages['alice'] = 41;
-// console.log( ages['alice'] ); //=> 41
+ages['alice'] = 41;
+console.log( ages['alice'] ); //=> 41
 
-// ages['fred'] = 19; //adds the key and assigns value
-// ages['joe'] = 15; //adds the key and assigns value
-// console.log(ages);
+ages['fred'] = 19; //adds the key and assigns value
+ages['joe'] = 15; //adds the key and assigns value
+console.log(ages);
 
 // // ages['joe'] = 15; //adds the key and assigns value
 
