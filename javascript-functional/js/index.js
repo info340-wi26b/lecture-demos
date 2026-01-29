@@ -1,17 +1,17 @@
 'use strict';
 
-const peopleArray = [
-  {name: 'Ada', height: 64, weight: 135},
-  {name: 'Bob', height: 74, weight: 156, pronoun: 'they/them'},
-  {name: 'Chris', height: 69, weight: 139},
-  {name: 'Diya', height: 69, weight: 144},
-  {name: 'Emma', height: 71, weight: 152}
-]
+// const peopleArray = [
+//   {name: 'Ada', height: 64, weight: 135},
+//   {name: 'Bob', height: 74, weight: 156, pronoun: 'they/them'},
+//   {name: 'Chris', height: 69, weight: 139},
+//   {name: 'Diya', height: 69, weight: 144},
+//   {name: 'Emma', height: 71, weight: 152}
+// ]
 
 // console.log("peopleArray :", peopleArray);
 // console.log("typeof peopleArray: ", typeof peopleArray);
 
-// // Slide 9
+// Slide 9
 // //assign array to variable
 // const myArray = ['a','b','c'];
 
@@ -31,13 +31,13 @@ const peopleArray = [
 // function sayHello(name) { 
 //   console.log("Hello, "+name);
 // }
-// // console.log(sayHello("tim"))
+// console.log(sayHello("tim"))
 // console.log("typeof sayHello :", typeof sayHello); // 'function'
 
 // const other1 = sayHello;
 
 // console.log("typeof other1 :", typeof other1); // 'function'
-
+// console.log(other1("tim"))
 // //Both print "Hello, everyone" because they are the same function.
 // sayHello('everyone');
 // other1('everyone'); 
@@ -47,6 +47,8 @@ const peopleArray = [
 // // Slide 11 Functions  literals
 // const array = [1,2,3]; //named variable (not anonymous)
 // console.log(array); //pass in named var
+
+// // let foo = 1;
 
 // console.log( [4,5,6] ); //pass in anonymous value
 
@@ -69,14 +71,14 @@ const peopleArray = [
 // sayHello("Todd");
 
 
-// //Slide 12
+// //Slide 13
 // const obj = {}
 
 // function sayHello(name) { 
 //    console.log("Hello, "+name);
 // }
 
-// console.log("obj :", obj);
+// obj.myarray = [1,2,3];
 
 // //assign function to object
 // obj.sayHi = sayHello;
@@ -85,10 +87,11 @@ const peopleArray = [
 // console.log("obj.sayHi: ", obj.sayHi)
 
 // //access (run) with dot notation
-// obj.sayHi('all'); //prints "Hello all"
+// obj.sayHi('all to you'); //prints "Hello all"
 
-// //here's the object. It has the one function we assigned above
-// console.log("obj : ", obj);
+// console.log("obj :", obj);
+// // //here's the object. It has the one function we assigned above
+// // console.log("obj : ", obj);
 
 
 // //Now assign another function as a literal (anonymous value)
@@ -102,12 +105,15 @@ const peopleArray = [
 // //run it
 // obj.otherFunc();
 
-// // // slide 13
+// // // // slide 13
 
-// function sayHello(name) { 
-//   console.log("Hello, "+name);
-// }
+// // function sayHello(name) { 
+// //   console.log("Hello, "+name);
+// // }
 
+// // const sayHello = function (name) { 
+// //   console.log("Hello, "+name);
+// // }
 // //takes ANOTHER FUNCTION as an arg
 // //will call the arg function, 
 // //passing it "world"
@@ -145,6 +151,7 @@ const peopleArray = [
 // //takes in TWO callback functions!
 // function doTogether(firstCallback, secondCallback){
 //   firstCallback();  //execute the first function
+//   console.log(typeof secondCallback);
 //   secondCallback();  //execute the second function
 //   console.log('at the same time!');
 // }
@@ -161,8 +168,8 @@ const peopleArray = [
 // // pass in the callbacks to do them together
 // doTogether(patHead, rubBelly);
 
-// // doTogether(rubBelly, patHead);
-// doTogether(rubBelly, patHead());
+// // // doTogether(rubBelly, patHead);
+// // doTogether(rubBelly, patHead());
 
 
 // // Slide 16
@@ -251,62 +258,69 @@ const peopleArray = [
 //   console.log(theArray);
 // });
 
-// //Slide 19 Mapping
+//Slide 19 Mapping
 
-// // function square(n) { //a function that squares a number
-// //   return n*n;
-// // }
+// function square(n) { //a function that squares a number
+//   return n*n;
+// }
 
 // const numbers = [1,2,3,4,5];  //an initial array
 // console.log(numbers);
 
-// // //transform the numbers using the square() function
-// // const squares = []; //the transformed array
-// // for(let i=0; i<numbers.length; i++) {
-// //  const transformed = square(numbers[i]);
-// //  squares.push(transformed); //add transformed to array
-// // }
-// // console.log(squares); // [1, 4, 9, 16, 25]
+// // // //transform the numbers using the square() function
+// // // const squares = []; //the transformed array
+// // // for(let i=0; i<numbers.length; i++) {
+// // //  const transformed = square(numbers[i]);
+// // //  squares.push(transformed); //add transformed to array
+// // // }
+// // // console.log(squares); // [1, 4, 9, 16, 25]
 
-//TEMPLATE
-/*
-const newArray = oldArray.map(function(item){
-  const transformed = ...
-  return transformed;
-});
-*/
+// //TEMPLATE
+// /*
+// const newArray = oldArray.map(function(item){
+//   const transformed = ...
+//   return transformed;
+// });
+// */
 
-// // map the numbers using the named callback function
-// const squares = numbers.map(square);
+// // // map the numbers using the named callback function
+// // const squares = numbers.map(square);
 
 // // or more commonly, map the numbers using anonymous callback function
 // const squares = numbers.map(function(n) {
 //     return n*n;
-// })
+// });
 
 
 // console.log(squares); // [1, 4, 9, 16, 25]
+//  list of people's names, heights, and weights
+let peopleArray = [ {name: 'Ada', height: 64, weight: 200},
+                    {name: 'Bob', height: 54, weight: 199},
+                    {name: 'Chris', height: 69, weight: 139},
+                    {name: 'Diya', height: 69, weight: 144},
+                    {name: 'Emma', height: 71, weight: 152}];
 
 
-// // another  example with peopleArray:
+// another  example with peopleArray:
 
-// const alteredPeopleArray = peopleArray.map(function (personObj) {
-//   const personName = "hi " + personObj.name
-//   return personName;
+const alteredPeopleArray = peopleArray.map(function (personObj) {
+  const personName = "hi " + personObj.name
+  return personName;
 
-// });
+});
 
-// console.log(alteredPeopleArray);
+console.log(alteredPeopleArray);
+console.log(peopleArray);
 
-// // // and another example showing how we might start to transform things into hmtl elements
+// // and another example showing how we might start to transform things into hmtl elements
 
-// const liPeopleArray = peopleArray.map(function (personObj) {
-//   const liElement = "<li>" + personObj.name + "</li>"
-//   return liElement;
+const liPeopleArray = peopleArray.map(function (personObj) {
+  const liElement = "<li>" + personObj.name + "</li>"
+  return liElement;
 
-// });
+});
 
-// console.log(liPeopleArray);
+console.log(liPeopleArray);
 
 // // // Slide 20 - Practice
 
