@@ -7,6 +7,12 @@ const songArray = [
   },
   {
     artist: "The Police", title: "Spirits In the Material World", youtubeUrl: "https://www.youtube.com/watch?v=BHOevX4DlGk"
+  },
+  {
+    artist: "Bruce Springsteen", title: "Streets of Minneapolis", youtubeUrl: "https://www.youtube.com/watch?v=GDaPdpwA4Iw"
+  },
+  {
+    artist: "Bruce Cockburn", title: "They Call it Democracy", youtubeUrl: "https://www.youtube.com/watch?v=Gfcfdt0jcWs"
   }
 ];
 
