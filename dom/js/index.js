@@ -25,13 +25,13 @@ const songArray = [
 // const puppyImg = document.querySelector('#puppySection img')
 // console.log(puppyImg);
 
-// // querySelectorAll will select multiple elements rather than just the 1st element
-// // that matches the selector
+// querySelectorAll will select multiple elements rather than just the 1st element
+// that matches the selector
 
 // //change the content of an element
 // const subtitle = document.querySelector('main h2');
 
-// subtitle.innerHTML = subtitle.textContent + " <em>(Husky)</em>";
+// subtitle.textContent = subtitle.textContent + " <em>(Husky)</em>";
 
 
 // //Slide 14 Change an Attribute
@@ -55,7 +55,7 @@ const songArray = [
 // console.log(document.querySelector('header').classList);
 
 // //make the padding really big
-// document.querySelector('header').classList.add('py-5')
+// document.querySelector('header').classList.add('py-3', 'my-5' )
 
 // console.log(document.querySelector('header').classList);
 
@@ -63,13 +63,13 @@ const songArray = [
 
 // theImg.classList.add('anim') //adds a new style
 
-// // In the console type: "theImg.classList.toggle('scale-out');"
+// // // In the console type: "theImg.classList.toggle('scale-out');"
 
 
 // //Slide 16 Creating Elements
 
 // const newLi = document.createElement('li');
-// console.log(newLi);
+// // console.log(newLi);
 
 // newLi.textContent = songArray[0].artist + " - " + songArray[0].title;
 // console.log(newLi);
@@ -122,9 +122,9 @@ const songArray = [
 // const songListElem = document.querySelector('#dataSection ol');
 // songListElem.appendChild(newLi);
 
-// Slide 18 - Pattern of using functions to generate elements
-// Take in a song object and return a formatted <li> object
-// We can do this with less code in React
+// // Slide 18 - Pattern of using functions to generate elements
+// // Take in a song object and return a formatted <li> object
+// // We can do this with less code in React
 
 // function createSongListItem(songObj) {
 //   //make this into a url
@@ -138,7 +138,7 @@ const songArray = [
 //   return newLi;
 // }
 
-
+// // 
 // // First show how we can use the function to create a single song list item
 // const songLiElem = createSongListItem({ artist: "Warren Zevon", title: "Lawyers Guns and Money", youtubeUrl: "https://www.youtube.com/watch?v=F2HH7J-Sx80" })
 // const songListElem = document.querySelector('#dataSection ol');
@@ -149,7 +149,7 @@ const songArray = [
 
 // function renderSongList(aSongArray) {
 //   const songListElem = document.querySelector('#dataSection ol');
-//   // songListElem.innerHTML = '';
+//   songListElem.innerHTML = '';
 //   for (const songObj of aSongArray) {
 //     const songLiElem = createSongListItem(songObj);
 //     songListElem.appendChild(songLiElem);
@@ -356,82 +356,82 @@ const songArray = [
 
 //   songArray.push(newSong);
 
-//   // document.querySelector('#artistInput').value = "";
-//   // document.querySelector('#titleInput').value = "";
-//   // document.querySelector('#urlInput').value = "";
+//   document.querySelector('#artistInput').value = "";
+//   document.querySelector('#titleInput').value = "";
+//   document.querySelector('#urlInput').value = "";
   
 //   renderSongList(songArray);
 
 // });
 
 
-// //Slide 29
-// //Another look at this where I use map to tranform the json into a an array of songLI's
+//Slide 29
+//Another look at this where I use map to tranform the json into a an array of songLI's
 
-// renderSongList(songArray);
+renderSongList(songArray);
 
-// // function to create one SongListItem
-// function createSongListItem(songObj) {
-//   //make this into a url
-//   const aElem = document.createElement('a');
-//   aElem.textContent = songObj.artist + " - " + songObj.title;
-//   aElem.href = songObj.youtubeUrl;
+// function to create one SongListItem
+function createSongListItem(songObj) {
+  //make this into a url
+  const aElem = document.createElement('a');
+  aElem.textContent = songObj.artist + " - " + songObj.title;
+  aElem.href = songObj.youtubeUrl;
 
-//   // create the newLi and make
-//   const newLi = document.createElement('li');
-//   newLi.append(aElem);
-//   return newLi;
-// }
-// // function to iterate over my SongArray to create and render as SongListItems
-// function renderSongList(aSongArray) {
+  // create the newLi and make
+  const newLi = document.createElement('li');
+  newLi.append(aElem);
+  return newLi;
+}
+// function to iterate over my SongArray to create and render as SongListItems
+function renderSongList(aSongArray) {
 
-//   let songLiArray = songArray.map( function (songObj) {
-//     const songLiElem = createSongListItem(songObj);
-//     return songLiElem;
-//   })
+  let songLiArray = songArray.map( function (songObj) {
+    const songLiElem = createSongListItem(songObj);
+    return songLiElem;
+  })
 
-//   // clear out the previous content befor rendering
-//   const songListElem = document.querySelector('#dataSection ol');
-//   songListElem.innerHTML = '';
-//   console.log("songList: ", songLiArray);
+  // clear out the previous content befor rendering
+  const songListElem = document.querySelector('#dataSection ol');
+  songListElem.innerHTML = '';
+  console.log("songList: ", songLiArray);
 
-//   for (const songLiElem of songLiArray) {
-//     songListElem.appendChild(songLiElem);
-//   }
+  for (const songLiElem of songLiArray) {
+    songListElem.appendChild(songLiElem);
+  }
 
-//   document.querySelector('#dataSection h2').textContent = "Top " + aSongArray.length + " Songs";
+  document.querySelector('#dataSection h2').textContent = "Top " + aSongArray.length + " Songs";
 
-// }
-// const formElement = document.querySelector('#formSection form');
+}
+const formElement = document.querySelector('#formSection form');
 
-// //listen for submit events
-// formElement.addEventListener('submit', function (event) {
-//   //stop normal behavior (going to a new site)
-//   event.preventDefault();
+//listen for submit events
+formElement.addEventListener('submit', function (event) {
+  //stop normal behavior (going to a new site)
+  event.preventDefault();
 
-//   //access what value the user typed in
-//   const artistInput = document.querySelector('#artistInput');
-//   const titleInput = document.querySelector('#titleInput');
-//   const urlInput = document.querySelector('#urlInput');
+  //access what value the user typed in
+  const artistInput = document.querySelector('#artistInput');
+  const titleInput = document.querySelector('#titleInput');
+  const urlInput = document.querySelector('#urlInput');
 
-//   const artistVal = artistInput.value;
-//   const titleVal = titleInput.value;
-//   const urlVal = urlInput.value;
+  const artistVal = artistInput.value;
+  const titleVal = titleInput.value;
+  const urlVal = urlInput.value;
 
-//   console.log(artistVal + " " + titleVal + " " + urlVal);
+  console.log(artistVal + " " + titleVal + " " + urlVal);
 
-//   const newSong = { artist: artistVal, title: titleVal, youtubeUrl: urlVal };
+  const newSong = { artist: artistVal, title: titleVal, youtubeUrl: urlVal };
 
-//   songArray.push(newSong);
-//   console.log("songArray: ", songArray)
+  songArray.push(newSong);
+  console.log("songArray: ", songArray)
 
-//   // document.querySelector('#artistInput').value = "";
-//   // document.querySelector('#titleInput').value = "";
-//   // document.querySelector('#urlInput').value = "";
+  // document.querySelector('#artistInput').value = "";
+  // document.querySelector('#titleInput').value = "";
+  // document.querySelector('#urlInput').value = "";
   
-//   renderSongList(songArray);
+  renderSongList(songArray);
 
-// });
+});
 
 
 
