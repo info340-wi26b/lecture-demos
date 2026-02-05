@@ -1,6 +1,10 @@
 'use strict';
 
-const animalArray = ["dog", "cat", "goldfish"];
+export const animalArray = ["dog", "cat", "goldfish"];
+
+export default function otherfunction() {
+    console.log("This is otherfunction from index.js");
+}
 
 console.log("I'm the index.js file!");
 
