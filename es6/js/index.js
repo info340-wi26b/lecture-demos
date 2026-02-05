@@ -131,23 +131,34 @@ console.log(peopleArray);
 
 // console.log(foo3());
 
+// const array = [1,2,3]; //an array to work with
+
+// //normal function
+// const SquaredArray = array.map(function(num) {
+//   return num*2; //multiply each item by 2
+// });
+
+// //arrow syntax
+// const SquaredArray2 = array.map((num) => {
+//   return num*2; //multiply each item by 2
+// });
 
 //   // Slide 13
 //   //destructuring arrays
-// const myArray = [1, 2, 3, 5];
-// const [x, y, z] = myArray; //myArray elements to `x`, `y`, `z`
-// console.log(x); //=> 1;
-// console.log(y); //=> 2;
-// console.log(z); //=> 3;
+// const myArray = [1, 2];
+// const [x, z, y ] = myArray; //myArray elements to `x`, `y`, `z`
+// console.log("x: " + x); //=> 1;
+// console.log("y: " + y); //=> 2;
+// console.log("z: " + z); //=> 3;
 
 // //destructuring objects
-// const myObject = {a: "dude", b: "surf", c: "hey"};
-// const {a, b, c} = myObject; //myObject.a to a, etc.
+// const myObject = {a: "dude", b: "surf", c: "hey", d:"man"};
+// const {a, b} = myObject; //myObject.a to a, etc.
 // console.log(a); //=> "dude";
 // console.log(b); //=> "surf";
 // console.log(c); //=> "hey";
 
-// Slide 14
+// // Slide 14
 // // 2 Examples of the reduce method using the destructuring as well
 
 // // Example 1: Here's the way to return the avg from within the reduce method using the other extra params
@@ -194,15 +205,17 @@ console.log(peopleArray);
 // const copyOfPerson = {...person}; //clone an object!
 // console.log(copyOfPerson);
 
-// console.log(person === copyOfPerson); //false! different objects!
+// // console.log(person === copyOfPerson); //false! different objects!
 
 // //all off the properties are "spread" into the new object
 // const personWithHat = {hat: 'baseball', ...person}
 // console.log(person); //has name, height, weight
 // console.log(personWithHat); //has name, height, weight, hat
 
-// const tallerAda = {...person, height: 74};
+// const tallerAda = {height: 74, ...person };
 // console.log(tallerAda);
+
+console.log("first ", "second", "third", ..."fourth".toUpperCase().split(""));
 
  
 
