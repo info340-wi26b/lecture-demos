@@ -11,11 +11,14 @@ import './index.css';
 
 // // Example 2
 // const content = (
-//     <header>
+//     <> 
+    
 //       <h1>Hello world!</h1>
 //       <p>This is a fine demo</p>
-//     </header>
+//     </>
 //   );
+
+  
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(content);
@@ -39,7 +42,7 @@ import './index.css';
 // // Example 4 - inline examples 
 
 // const myTitle = "Hello Inline React";
-// const imgURL = './img/puppy.jpg';
+// const imgURL = './img/husky.jpg';
 
 // const content = (
 
@@ -94,6 +97,8 @@ import './index.css';
 // function MessageList(props) {
 //     return (
 //         <div>
+//            {/* this is a comment */}
+//            {/* comment */}
 //             <ul>
 //                 <HelloMessage /> {/* A HelloMessage component */}
 //                 <GoodbyeMessage /> {/* A GoodbyeMessage component */}
@@ -125,51 +130,51 @@ import './index.css';
 // // This is a more complicated set of examples that show how to use props and map to create elements
 // // It uses Song objects and creates a list of songs and then maps them to create a list of SongItem components
 
-// //Example 6 - Make a couple of components and render them
-// const songArray = [
-//     { artist: "The Who", title: "Won't Get Fooled Again", youtubeUrl: "https://www.youtube.com/watch?v=UDfAdHBtK_Q" },
-//     {
-//         artist: "Rush", title: "Tom Sawyer", youtubeUrl: "https://www.youtube.com/watch?v=QJ4-9tAf9UQ&list=PL26lD4FG8zwzpWUdgM9E0vYXDnLmSLj3m"
-//     },
-//     {
-//         artist: "The Police", title: "Spirits In the Material World", youtubeUrl: "https://www.youtube.com/watch?v=BHOevX4DlGk"
-//     }
-// ];
+//Example 6 - Make a couple of components and render them
+const songArray = [
+    { artist: "The Who", title: "Won't Get Fooled Again", youtubeUrl: "https://www.youtube.com/watch?v=UDfAdHBtK_Q" },
+    {
+        artist: "Rush", title: "Tom Sawyer", youtubeUrl: "https://www.youtube.com/watch?v=QJ4-9tAf9UQ&list=PL26lD4FG8zwzpWUdgM9E0vYXDnLmSLj3m"
+    },
+    {
+        artist: "The Police", title: "Spirits In the Material World", youtubeUrl: "https://www.youtube.com/watch?v=BHOevX4DlGk"
+    }
+];
 
-// function HeaderComponent(props) {
-//     return (
-//         <div>
-//             <header>
-//                 <h1>React Demo Header</h1>
-//             </header>
-//         </div>);
-// }
+function HeaderComponent(props) {
+    return (
+        <div>
+            <header>
+                <h1>React Demo Header</h1>
+            </header>
+        </div>);
+}
 
-// function Banner(props) {
-//     return <h2>Number of songs in my array is: {songArray.length}</h2>;
-// }
+function Banner(props) {
+    return <h2>Number of songs in my array is: {songArray.length}</h2>;
+}
 
-// function SongList(props) {
-//     return (
-//         <div>
-//             <ul>
-//                 <li>{songArray[0].title} - {songArray[0].artist}</li>
-//                 <li>{songArray[1].title} - {songArray[1].artist}</li>
-//                 <li>{songArray[2].title} - {songArray[2].artist}</li>
-//             </ul>
-//         </div>
-//     );
-// }
+function SongList(props) {
+    return (
+        <div>
+            <ul>
+                <l  >{songArray[0].title} - {songArray[0].artist}</li>
+                <li>{songArray[1].title} - {songArray[1].artist}</li>
+                <li>{songArray[2].title} - {songArray[2].artist}</li>
+            </ul>
+        </div>
+    );
+}
 
-// const content =
-//     <>
-//         <HeaderComponent />
-//         <Banner />
-//         <SongList />
-//     </>
+const content =
+    <>
+        <HeaderComponent />
+        <Banner />
+        <SongList />
+    </>
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(content)
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(content)
 
 
 // // Example 7 - Using props and using map to create elements
