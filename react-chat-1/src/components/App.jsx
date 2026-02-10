@@ -20,8 +20,16 @@ export default function App(props) {
 //   );
 // }
 
-
-// // Example Slide 15
+// Example Slide 15
+// export default function App(props) {
+//   return (
+//     <div>
+//       <HeaderBar />
+//       <ChannelList />
+//     </div>
+//   );
+// }
+// // Example Slide 17
 // export default function App(props) {
 //   return (
 //     <div>
