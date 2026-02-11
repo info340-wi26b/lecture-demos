@@ -1,9 +1,12 @@
-import React from 'react';
-    function App(props) 
-    {
+import { HeaderComponent } from './HeaderComponent.jsx'
+import { SongList } from './SongList.jsx'
+
+export function App(props) {
+    
+    return(
     <>
         <HeaderComponent />
-        <Banner />
         <SongList />
     </>
-    }
+    );
+}
