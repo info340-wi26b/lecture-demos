@@ -1,13 +1,13 @@
 import React from 'react';
-// import { HeaderBar } from './HeaderBar';
-// import { ChannelList } from './ChannelList';
-// import { ChatPane } from './ChatPane';
+import { HeaderBar } from './HeaderBar';
+import { ChannelList } from './ChannelList';
+import { ChatPane } from './ChatPane';
 
-export default function App(props) {
-  return (
-    <div>Hello App</div>
-  );
-}
+// export default function App(props) {
+//   return (
+//     <div>Hello App</div>
+//   );
+// }
 
 
 // // Example Slide 14
@@ -20,7 +20,7 @@ export default function App(props) {
 //   );
 // }
 
-// Example Slide 15
+// // Example Slide 15
 // export default function App(props) {
 //   return (
 //     <div>
@@ -40,25 +40,25 @@ export default function App(props) {
 //   );
 // }
 
-// // Example Slide 24
+// Example Slide 24
 
-// export default function App(props) {
+export default function App(props) {
 
-//   return (
-//     <div>
+  return (
+    <div className="container-fluid">
 
-//       <HeaderBar />
-//       <div className='row'>
-//         <div className='col-2'>
-//           <ChannelList />
-//         </div>
-//         <main className='col'>
-//           <ChatPane />
-//         </main>
-//       </div>
-//     </div>
-//   )
-// };
+      <HeaderBar />
+      <div className='row'>
+        <div className='col-2'>
+          <ChannelList />
+        </div>
+        <main className='col'>
+          <ChatPane />
+        </main>
+      </div>
+    </div>
+  )
+};
 
 
 // // Example Slide 28 

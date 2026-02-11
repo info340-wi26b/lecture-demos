@@ -46,5 +46,13 @@
       "text": "Who?",
       "timestamp": 1320224640000,
       "channel": "random"
+  },
+  {
+      "userId": "owl",
+      "userName": "Owl",
+      "userImg": "/img/Owl.png",
+      "text": "Seahawks win the superbowl!",
+      "timestamp": 1320224640001,
+      "channel": "random"
   }
 ]
