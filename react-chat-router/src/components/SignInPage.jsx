@@ -1,5 +1,3 @@
-import React from 'react';
-
 import DEFAULT_USERS from '../data/users.json';
 
 export default function SignInPage(props) {
@@ -37,7 +35,7 @@ export default function SignInPage(props) {
   )
 }
 
-// // Slide 9 (once the example react bootstrap nav component has been transform
+// // Slide 11 (once the example react bootstrap nav component has been transform
 
 // import React from 'react';
 // import Dropdown from 'react-bootstrap/Dropdown';
