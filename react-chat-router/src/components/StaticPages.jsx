@@ -1,4 +1,4 @@
-
+import React from 'react';
 export function WelcomePage(props) {
   return (
     <div className="card bg-light">
