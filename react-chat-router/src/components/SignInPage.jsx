@@ -1,3 +1,5 @@
+import React from 'react';
+
 import DEFAULT_USERS from '../data/users.json';
 
 export default function SignInPage(props) {

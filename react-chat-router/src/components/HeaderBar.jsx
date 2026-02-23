@@ -1,4 +1,5 @@
 
+import React from 'react';
 export function HeaderBar(props) {
   const currentUser = props.currentUser;
 
