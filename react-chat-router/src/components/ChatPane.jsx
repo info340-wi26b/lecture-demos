@@ -138,6 +138,7 @@ function MessageItem(props) {
 
   const handleClick = function(event) {
     setIsLiked(!isLiked);
+
   }
 
 
