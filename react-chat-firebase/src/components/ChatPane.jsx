@@ -84,7 +84,7 @@ function MessageItem(props) {
   )
 }
 
-// //Slide 18
+// //Slide 20
 
 // import React, {useState} from 'react';
 // import Button from 'react-bootstrap/Button'
@@ -183,7 +183,7 @@ function MessageItem(props) {
 //   )
 // }
 
-// //Slide 21
+// //Slide 23
 
 // import React, {useState} from 'react';
 // import Button from 'react-bootstrap/Button'
@@ -292,7 +292,7 @@ function MessageItem(props) {
 //   )
 // }
 
-// // Slide 33
+// // Slide 35
 // import React from 'react';
 // import { useParams } from 'react-router-dom';
 // import { getDatabase, ref, set as firebaseSet} from 'firebase/database'; 

@@ -9,7 +9,7 @@ import App from './components/App.jsx';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
  
-// //Slide 14
+// //Slide 16
 // // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
 // // TODO: Add SDKs for Firebase products that you want to use
