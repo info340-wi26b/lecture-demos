@@ -56,7 +56,7 @@ export default function SignInPage(props) {
 // import { Navigate } from 'react-router-dom';
 // import Dropdown from 'react-bootstrap/Dropdown';
 
-// import { StyledFirebaseAuth } from 'react-firebaseui';
+// import StyledFirebaseAuth from 'react-firebaseui/dist/StyledFirebaseAuth';
 
 // import {GoogleAuthProvider, EmailAuthProvider, getAuth} from 'firebase/auth'
 
@@ -132,7 +132,7 @@ export default function SignInPage(props) {
 
 // import React from 'react';
 // import { Navigate } from 'react-router-dom';
-// import { StyledFirebaseAuth } from 'react-firebaseui';
+// import StyledFirebaseAuth from 'react-firebaseui/dist/StyledFirebaseAuth';
 // import { GoogleAuthProvider, EmailAuthProvider, getAuth } from 'firebase/auth'
 
 
