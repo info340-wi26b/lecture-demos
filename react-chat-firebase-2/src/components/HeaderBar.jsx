@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router';
 
 export function HeaderBar(props) {
   const currentUser = props.currentUser;
@@ -51,7 +51,7 @@ export function HeaderBar(props) {
 
 // import React from 'react';
 
-// import { Link, NavLink } from 'react-router-dom';
+// import { Link, NavLink } from 'react-router';
 
 // import { getAuth, signOut } from 'firebase/auth';
 

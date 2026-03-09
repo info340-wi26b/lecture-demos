@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { Routes, Route, Outlet, Navigate, useNavigate } from 'react-router-dom';
+import { Routes, Route, Outlet, Navigate, useNavigate } from 'react-router';
 
 import { HeaderBar } from './HeaderBar.jsx';
 
@@ -69,7 +69,7 @@ function ProtectedPage(props) {
 
 // //Slide 21
 // import React, { useState, useEffect } from 'react';
-// import { Routes, Route, Outlet, Navigate, useNavigate } from 'react-router-dom';
+// import { Routes, Route, Outlet, Navigate, useNavigate } from 'react-router';
 
 // import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
@@ -160,7 +160,7 @@ function ProtectedPage(props) {
 
 // //Slide 28
 // import React, { useState, useEffect } from 'react';
-// import { Routes, Route, Outlet, Navigate, useNavigate } from 'react-router-dom';
+// import { Routes, Route, Outlet, Navigate, useNavigate } from 'react-router';
 
 // import { getAuth, onAuthStateChanged } from 'firebase/auth';
 

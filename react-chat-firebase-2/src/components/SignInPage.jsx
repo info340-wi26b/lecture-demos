@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import { Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router';
 import Dropdown from 'react-bootstrap/Dropdown';
 
 import DEFAULT_USERS from '../data/users.json';
@@ -53,7 +53,7 @@ export default function SignInPage(props) {
 // //Slide 18
 
 // import React from 'react';
-// import { Navigate } from 'react-router-dom';
+// import { Navigate } from 'react-router';
 // import Dropdown from 'react-bootstrap/Dropdown';
 
 // import StyledFirebaseAuth from 'react-firebaseui/dist/StyledFirebaseAuth';
@@ -131,7 +131,7 @@ export default function SignInPage(props) {
 // //Slide 23
 
 // import React from 'react';
-// import { Navigate } from 'react-router-dom';
+// import { Navigate } from 'react-router';
 // import StyledFirebaseAuth from 'react-firebaseui/dist/StyledFirebaseAuth';
 // import { GoogleAuthProvider, EmailAuthProvider, getAuth } from 'firebase/auth'
 

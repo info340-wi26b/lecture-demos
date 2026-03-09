@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router';
 import { getDatabase, ref, set as firebaseSet, onValue, push as firebasePush } from 'firebase/database' //realtime
 
 import { ChannelList } from './ChannelList.jsx';
