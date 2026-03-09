@@ -16,13 +16,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBySBD69aYpBzGVjVjpZ_Ua1Xmu5vNmkJ0",
-  authDomain: "info340cwinter25.firebaseapp.com",
-  databaseURL: "https://info340cwinter25-default-rtdb.firebaseio.com",
-  projectId: "info340cwinter25",
-  storageBucket: "info340cwinter25.firebasestorage.app",
-  messagingSenderId: "306863158198",
-  appId: "1:306863158198:web:2855336e2b81e655748717"
+  apiKey: "AIzaSyB--G-lw1CE6nP-Q68Ahm9HOBlTbeFcN38",
+  authDomain: "info340bchatwinter26.firebaseapp.com",
+  databaseURL: "https://info340bchatwinter26-default-rtdb.firebaseio.com",
+  projectId: "info340bchatwinter26",
+  storageBucket: "info340bchatwinter26.firebasestorage.app",
+  messagingSenderId: "356750976563",
+  appId: "1:356750976563:web:4fab8703f5fdd0ab8be546"
 };
 
 // Initialize Firebase
