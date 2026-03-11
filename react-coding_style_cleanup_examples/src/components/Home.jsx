@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {
   Navbar,
   Nav,
@@ -11,8 +11,46 @@ import {
   Button
 } from 'react-bootstrap';
 
-export  function Home(props) {
+export function Home(props) {
   const coffeeData = props.coffeeData;
+  const navigate = useNavigate();
+
+  // const handleClick = (event) => {
+  //     const coffeeId = event.currentTarget.dataset.coffeeId;
+  //     console.log("clicked coffeeId:", coffeeId);
+  //     navigate(`/coffee/${coffeeId}`);
+  //   };
+
+
+  // const coffeeCards = coffeeData.map((drink) => (
+  //             <Col key={drink.id}>
+  //               <Card
+  //                 className="h-100"
+  //                 style={{ cursor: "pointer" }}
+  //                 data-coffee-id={drink.id}
+  //                 onClick={handleClick}
+  //               >
+  //                 <Card.Img variant="top" src={drink.image} alt={drink.name} />
+
+  //                 <Card.Body>
+  //                   <Card.Title>{drink.name}</Card.Title>
+  //                   <Card.Text>{drink.shortDescription}</Card.Text>
+  //                 </Card.Body>
+  //               </Card>
+  //             </Col>
+  //           ))
+
+  // const drinks = coffeeData.map((drink) => (
+  //   <NavDropdown.Item
+  //     key={drink.id}
+  //     as={Link}
+  //     to={`/coffee/${drink.id}`}
+  //   >
+  //     {drink.name}
+  //   </NavDropdown.Item>
+  // ))
+
+
 
   return (
     <>
@@ -44,6 +82,7 @@ export  function Home(props) {
                       {drink.name}
                     </NavDropdown.Item>
                   ))}
+
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
@@ -56,23 +95,26 @@ export  function Home(props) {
           <Row xs={1} sm={2} md={3} lg={5} className="g-3 g-lg-4">
             {coffeeData.map((drink) => (
               <Col key={drink.id}>
-                <Card className="h-100">
+                <Card
+                  className="h-100"
+                  style={{ cursor: "pointer" }}
+                  data-coffee-id={drink.id}
+                  onClick={(event) => {
+                    const coffeeId = event.currentTarget.dataset.coffeeId;
+                    navigate(`/coffee/${coffeeId}`);
+                  }}
+                  // onClick={handleClick}
+                >
                   <Card.Img variant="top" src={drink.image} alt={drink.name} />
-                  <Card.Body className="d-flex flex-column">
+
+                  <Card.Body>
                     <Card.Title>{drink.name}</Card.Title>
                     <Card.Text>{drink.shortDescription}</Card.Text>
-                    <Button
-                      as={Link}
-                      to={`/coffee/${drink.id}`}
-                      variant="dark"
-                      className="w-100 mt-auto"
-                    >
-                      Learn More
-                    </Button>
                   </Card.Body>
                 </Card>
               </Col>
             ))}
+
           </Row>
         </Container>
       </main>
