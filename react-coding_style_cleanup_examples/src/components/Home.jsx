@@ -15,40 +15,40 @@ export function Home(props) {
   const coffeeData = props.coffeeData;
   const navigate = useNavigate();
 
-  // const handleClick = (event) => {
-  //     const coffeeId = event.currentTarget.dataset.coffeeId;
-  //     console.log("clicked coffeeId:", coffeeId);
-  //     navigate(`/coffee/${coffeeId}`);
-  //   };
+  const handleClick = (event) => {
+      const coffeeId = event.currentTarget.dataset.coffeeId;
+      console.log("clicked coffeeId:", coffeeId);
+      navigate(`/coffee/${coffeeId}`);
+    };
 
 
-  // const coffeeCards = coffeeData.map((drink) => (
-  //             <Col key={drink.id}>
-  //               <Card
-  //                 className="h-100"
-  //                 style={{ cursor: "pointer" }}
-  //                 data-coffee-id={drink.id}
-  //                 onClick={handleClick}
-  //               >
-  //                 <Card.Img variant="top" src={drink.image} alt={drink.name} />
+  const coffeeCards = coffeeData.map((drink) => (
+              <Col key={drink.id}>
+                <Card
+                  className="h-100"
+                  style={{ cursor: "pointer" }}
+                  data-coffee-id={drink.id}
+                  onClick={handleClick}
+                >
+                  <Card.Img variant="top" src={drink.image} alt={drink.name} />
 
-  //                 <Card.Body>
-  //                   <Card.Title>{drink.name}</Card.Title>
-  //                   <Card.Text>{drink.shortDescription}</Card.Text>
-  //                 </Card.Body>
-  //               </Card>
-  //             </Col>
-  //           ))
+                  <Card.Body>
+                    <Card.Title>{drink.name}</Card.Title>
+                    <Card.Text>{drink.shortDescription}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))
 
-  // const drinks = coffeeData.map((drink) => (
-  //   <NavDropdown.Item
-  //     key={drink.id}
-  //     as={Link}
-  //     to={`/coffee/${drink.id}`}
-  //   >
-  //     {drink.name}
-  //   </NavDropdown.Item>
-  // ))
+  const drinks = coffeeData.map((drink) => (
+    <NavDropdown.Item
+      key={drink.id}
+      as={Link}
+      to={`/coffee/${drink.id}`}
+    >
+      {drink.name}
+    </NavDropdown.Item>
+  ))
 
 
 
@@ -73,7 +73,7 @@ export function Home(props) {
                 <Nav.Link as={Link} to="/about">About</Nav.Link>
 
                 <NavDropdown title="Drinks" id="drinks-dropdown">
-                  {coffeeData.map((drink) => (
+                  {/* {coffeeData.map((drink) => (
                     <NavDropdown.Item
                       key={drink.id}
                       as={Link}
@@ -81,7 +81,8 @@ export function Home(props) {
                     >
                       {drink.name}
                     </NavDropdown.Item>
-                  ))}
+                  ))} */}
+                  {drinks}
 
                 </NavDropdown>
               </Nav>
@@ -93,7 +94,7 @@ export function Home(props) {
       <main className="py-4">
         <Container>
           <Row xs={1} sm={2} md={3} lg={5} className="g-3 g-lg-4">
-            {coffeeData.map((drink) => (
+            {/* {coffeeData.map((drink) => (
               <Col key={drink.id}>
                 <Card
                   className="h-100"
@@ -113,7 +114,8 @@ export function Home(props) {
                   </Card.Body>
                 </Card>
               </Col>
-            ))}
+            ))} */}
+            {coffeeCards}
 
           </Row>
         </Container>

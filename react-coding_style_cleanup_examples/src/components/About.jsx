@@ -10,7 +10,7 @@ import {
   Button
 } from "react-bootstrap";
 
-export default function About() {
+export default function About( props) {
   return (
     <>
       {/* Header */}
